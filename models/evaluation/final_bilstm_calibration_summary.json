@@ -1,0 +1,12 @@
+{
+  "model": "XSepsisNet Final BiLSTM",
+  "test_samples": 3536,
+  "brier_score": 0.21466470521360634,
+  "mean_absolute_calibration_error": 0.30270202701824583,
+  "number_of_bins": 8,
+  "note": "This is an assessment of the raw model probabilities on the test set. No calibration correction was fitted on the test set.",
+  "files": {
+    "calibration_table": "models\\evaluation\\final_bilstm_calibration_table.csv",
+    "calibration_curve": "models\\evaluation\\final_bilstm_calibration_curve.png"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model": "XSepsisNet Final BiLSTM",
+  "test_samples": 3536,
+  "positive_samples": 511,
+  "negative_samples": 3025,
+  "positive_prevalence": 0.14451357466063347,
+  "auroc": 0.7184554673222169,
+  "auprc": 0.2908138334058351,
+  "baseline_threshold": 0.5,
+  "baseline_confusion_matrix": {
+    "TN": 1870,
+    "FP": 1155,
+    "FN": 154,
+    "TP": 357
+  },
+  "baseline_metrics": {
+    "precision": 0.2361111111111111,
+    "recall_sensitivity": 0.6986301369863014,
+    "specificity": 0.6181818181818182,
+    "f1": 0.35294117647058826
+  },
+  "files": {
+    "threshold_analysis": "models\\evaluation\\final_bilstm_threshold_analysis.csv",
+    "roc_curve": "models\\evaluation\\final_bilstm_roc_curve.png",
+    "precision_recall_curve": "models\\evaluation\\final_bilstm_precision_recall_curve.png",
+    "confusion_matrix": "models\\evaluation\\final_bilstm_confusion_matrix_050.png"
+  }
+}

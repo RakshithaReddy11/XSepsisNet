@@ -1,0 +1,30 @@
+{
+  "random_seed": 42,
+  "input_size": 78,
+  "sequence_length": 6,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "bidirectional": true,
+  "dropout": 0.3,
+  "batch_size": 128,
+  "epochs_requested": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "patience": 5,
+  "positive_class_weight": 5.492150706436421,
+  "best_epoch": 3,
+  "best_validation_auprc": 0.2675299227305541,
+  "test_metrics": {
+    "auroc": 0.7184554673222169,
+    "auprc": 0.2908138334058351,
+    "precision": 0.2361111111111111,
+    "recall": 0.6986301369863014,
+    "f1": 0.35294117647058826,
+    "true_negative": 1870,
+    "false_positive": 1155,
+    "false_negative": 154,
+    "true_positive": 357,
+    "specificity": 0.6181818181818182,
+    "loss": 1.0199699140242322
+  }
+}

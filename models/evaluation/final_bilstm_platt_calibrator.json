@@ -1,0 +1,11 @@
+{
+  "method": "Platt scaling",
+  "fit_dataset": "validation",
+  "fit_samples": 3249,
+  "validation_positive": 475,
+  "validation_negative": 2774,
+  "coefficient": 3.7239330966455126,
+  "intercept": -3.592676182818465,
+  "formula": "calibrated_probability = sigmoid(coefficient * raw_probability + intercept)",
+  "test_data_used_for_fitting": false
+}

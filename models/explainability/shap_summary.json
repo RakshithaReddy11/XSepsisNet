@@ -1,0 +1,54 @@
+{
+  "model": "final_bilstm",
+  "sequence_length": 6,
+  "input_features_per_hour": 78,
+  "clinical_features": 39,
+  "missingness_features": 39,
+  "shap_version": "0.49.1",
+  "background_samples": 50,
+  "explained_samples": 10,
+  "test_samples": 3536,
+  "mean_test_probability": 0.44386786222457886,
+  "top_features": [
+    {
+      "feature": "mean_arterial_pressure",
+      "mean_absolute_shap": 0.33672239344993943
+    },
+    {
+      "feature": "systolic_blood_pressure",
+      "mean_absolute_shap": 0.1594294936162458
+    },
+    {
+      "feature": "base_excess",
+      "mean_absolute_shap": 0.12170514728686485
+    },
+    {
+      "feature": "diastolic_blood_pressure",
+      "mean_absolute_shap": 0.11233271995247143
+    },
+    {
+      "feature": "bun",
+      "mean_absolute_shap": 0.08430846756650379
+    },
+    {
+      "feature": "lactate",
+      "mean_absolute_shap": 0.07483857039577492
+    },
+    {
+      "feature": "platelets",
+      "mean_absolute_shap": 0.07437799662649662
+    },
+    {
+      "feature": "wbc",
+      "mean_absolute_shap": 0.07220153983356237
+    },
+    {
+      "feature": "anion_gap",
+      "mean_absolute_shap": 0.06544005512257324
+    },
+    {
+      "feature": "heart_rate",
+      "mean_absolute_shap": 0.06316585591330796
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+data/
+DATASETS/
+datasets/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+
+# IDE settings
+.vscode/
+
+# Generated patient-specific outputs
+outputs/dataset_cases/
+outputs/patient_xai/
+
+# Temporary Microsoft Office files
+~$*.docx
+~$*.xlsx
+~$*.pptx

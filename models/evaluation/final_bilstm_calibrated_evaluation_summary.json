@@ -1,0 +1,27 @@
+{
+  "model": "XSepsisNet Final BiLSTM",
+  "calibration_method": "Platt scaling",
+  "calibration_fit_dataset": "validation",
+  "validation_samples": 3249,
+  "test_samples": 3536,
+  "test_calibration_fitting": false,
+  "raw_test_metrics": {
+    "brier_score": 0.21466470521360634,
+    "log_loss": 0.6141829017404078,
+    "auroc": 0.7184554673222169,
+    "auprc": 0.2908138334058351,
+    "ece": 0.29935428307800477
+  },
+  "calibrated_test_metrics": {
+    "brier_score": 0.11418163857361552,
+    "log_loss": 0.37635250502398493,
+    "auroc": 0.7184554673222169,
+    "auprc": 0.2908138334058351,
+    "ece": 0.01691799918073817
+  },
+  "calibration_parameters": {
+    "coefficient": 3.7239330966455126,
+    "intercept": -3.592676182818465
+  },
+  "interpretation": "The BiLSTM itself was not retrained. Platt calibration was fitted using validation predictions only and then applied to the untouched test predictions."
+}
