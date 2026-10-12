@@ -1,0 +1,38 @@
+{
+  "project": "XSepsisNet",
+  "evaluation_type": "exploratory XAI checks",
+  "checks": {
+    "output_contract": {
+      "passed": true,
+      "samples_checked": 10,
+      "clinical_features_per_explanation": 39,
+      "hourly_contributions_per_explanation": 468,
+      "probabilities_finite_and_in_range": true,
+      "shap_values_finite": true
+    },
+    "perturbation_faithfulness": {
+      "samples": 10,
+      "top_k_features": 5,
+      "random_trials_per_sample": 10,
+      "mean_top_shap_probability_change": 0.1621497467160225,
+      "mean_random_probability_change": 0.011552219241857528,
+      "top_shap_change_larger": true,
+      "relative_ratio": 14.03624215583618,
+      "interpretation": "Top-SHAP perturbations changed the output more on average."
+    },
+    "explanation_stability": {
+      "samples": 5,
+      "clinical_input_noise_scale": 0.02,
+      "mean_spearman_rank_correlation": 0.9819583517944175,
+      "mean_top_k_jaccard_overlap": 0.7999999999999999,
+      "note": "Higher correlation and overlap indicate more stable rankings under the tested small input perturbations."
+    }
+  },
+  "limitations": [
+    "Small evaluation sample; results are preliminary.",
+    "Perturbations may create unrealistic clinical combinations.",
+    "Stability test uses small noise on the first clinical input features.",
+    "No live backend/frontend integration is tested.",
+    "This is not clinical validation."
+  ]
+}
